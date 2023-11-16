@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title> Analya Ramirez portfolio website </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D125QPSGD5"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-D125QPSGD5');
+</script>
+
+
+
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="images/fulls/profile.jpeg" class="image avatar"><img src="images/fulls/profile.jpeg" alt="" /></a>
+			<h1><strong>Analya Ramirez</strong></h1>
+			<P> I am passionate about delivering decision-making support grounded in data, utilizing statistical
+				modeling, machine learning, and data mining algorithms to drive informed choices.</P>
+			<!-- <h1 style="font-size: 2px;"></h1><a href="https://www.linkedin.com/in/isaac-dada-24ba6ab3/">@IsaacDada</a> -->
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h1 style="font-size: 24px;">Loan Approval Analysis
+				</h1>
+			</header>
+			<article class="col-6 col-12-xsmall work-item">
+				<h2><strong>Introduction</strong></h2>
+				<h4>The primary goal of my project was to develop a predictive model which would increase the efficiency 
+					and accuracy of the process of obtaining approval for a home loan. Being able to quickly identify and 
+					approve customer loans based upon their application data has wide reaching impacts for both lenders 
+					and borrowers. 
+					<br>
+					While the approval process is complex, and many factors – prior credit history, income, and loan amount 
+					for example – are taken into consideration before an individual receives disbursement of funds, there is 
+					inherent risk that a lender may approve a loan for someone who may ultimately cost this lender money. 
+					In fact, according to the Consumer Financial Protection Bureau (2023), the percentage of mortgages in 
+					the US that were between 30-89 days delinquent from 2008-2022 ranged between 4 to 1 percent.
+					<br>
+					For consumers, delays in loan approval can cause considerable disappointment in a highly competitive 
+					housing market. Comparing June 2022 to June 2023, there was a year over year decrease of 29 % of new 
+					homes listed (809,234 vs. 576,897). For the total number of homes for sale for the same months, reports 
+					indicate a 17% decrease in available inventory (1,113,438 vs. 921,004). To compound matters, the 
+					median number of days on the real estate market for this June was 29 days before an offer was accepted 
+					(Redfin, 2023). What this can mean is that if there is anything that could be causing a delay with the loan 
+					approval process, a consumer may find themselves looking for a home for quite some time.
+					<br>
+					We hope that this modeling will offer financial institutions a new approach for establishing loan 
+					eligibility, allowing them to provide better and faster services to more potential customers, creating 
+					value for both lenders and borrowers alike.</h4>
+				<br>
+				<h2><strong> Methods
+				</strong></h2>
+				<h4>Many datasets were reviewed during the early stages of the project, with particular emphasis on finding 
+					datasets of sufficient length and enough features to be able to draw meaningful conclusions. Ultimately, 
+					we landed on a dataset obtained via Kaggle which was comprised of 614 rows and 13 columns (Kumar, 
+					2020) due to its high quality and reasonable number of features. These features consisted of expected 
+					information from loan applications including but not limited to gender, income, marital status, loan 
+					amount, and education. During exploratory data analysis, we identified both missing data and outliers
+					(values more than 3 standard deviations from the mean for our numerical features) and removed these 
+					as part of our data cleansing steps. Oversampling was employed to address data imbalance in the target 
+					variable. Dummy variables were generated and then the best features were selected to reduce the 
+					dimensionality from 465 to just 30 features. An 80/20 split was employed to create training and test 
+					datasets for modeling and both sets were normalized with RobustScaler.
+					As the project at its core is a binary classification problem – is this loan approved or not – we discussed 
+					suitable candidates which would work well for this purpose, making the decision to compare logistic 
+					regression and random forest models as shown below:</h4>
+				<br>
+
+				<img src="./images/fulls/loan.PNG" alt="">
+				<br>
+				<h4>These models were evaluated using accuracy, precision, recall and F1-score. While the initial results were 
+					likely more than suitable, hyperparameter tuning with grid search and cross validation was nonetheless 
+					preformed to enhance the modeling. The predictability of these subsequent models was reevaluated 
+					using the same measures as prior untuned versions </h4>
+				<br>
+
+				<h2><strong>Results</strong></h2>
+				<h4>Initial results on the untuned models suggested that the Random Forest Classifier could likely be a better 
+					model for the purposes of predicting loan approvals, with accuracy, recall, precision, and F1-scores all 
+					outperforming those of the logistic regression.</h4>
+				<br>
+				<img src="./images/fulls/loan2.PNG" alt="">
+				<br>
+				<h4> An analysis of the feature importance in the random forest model showed that 4 features were 
+					considerably important in predicting loan approval – credit history, applicant income, loan amount, and 
+					coapplicant income.					
+				</h4>
+				<br>
+				<img src="./images/fulls/loan3.PNG" alt="">
+				<br>
+				
+				<h4> However, after hyperparameter tuning was completed, we found that the logistic regression proved to 
+					be a better model for predicting loan analysis, with the best logistic regression model possessing 
+					accuracy, precision, recall, and F1- scores at 98% while the Random Forest Classifier’s accuracy and F1-
+					scores dropped to 91% each. Below are the hyperparameters and the accuracy measures for our 
+					respective tuned models
+				</h4>
+				<br>
+				<img src="./images/fulls/loan4.PNG" alt="">
+				<br>
+				<h2><strong> Conclusion
+					</strong></h2>
+				<h4> The high accuracy and F1 values both before hyperparameter tuning suggest that there may be some 
+					degree of overfitting which has occurred with our modelling. We, however, believe the L1 and C=5 
+					hyperparameters of the tuned logistic regression model mean that we have adjusted for these issues in a 
+					way that successfully addresses these issues of fit and feel confident in suggesting that logistic regression 
+					is the most reasonable predictive model for loan approval.
+					Given time constraints and limitations imposed by the size of the dataset, future research opportunities 
+					should be focused on expanding both the number of unique loan applications upon which the model is 
+					trained and adding additional features which would normally be derivable from application data, taking 
+					great care to not create a system which either through carelessness or malicious intent denies loans 
+					along the lines of a federally protected class </h4>
+				<br>
+				<h2><strong>
+					References
+				</strong></h2>
+				<a href="https://www.kaggle.com/datasets/granjithkumar/loan-approval-data-set"> <li>https://www.kaggle.com/datasets/granjithkumar/loan-approval-data-set</li></a>
+				<br>
+				<a href="https://www.kaggle.com/datasets/granjithkumar/loan-approval-data-set"> <li>https://www.kaggle.com/datasets/granjithkumar/loan-approval-data-set</li></a>
+				<br>
+				<a href="https://www.consumerfinance.gov/data-research/mortgage-performance-trends/mortgages-30-89-days-delinquent/#mp-line-chart-container"> <li>https://www.consumerfinance.gov/data-research/mortgage-performance-trends/mortgages-30-89-days-delinquent/#mp-line-chart-container</li></a>
+				<br>
+				<a href="https://www.consumerfinance.gov/data-research/mortgage-performance-trends/mortgages-30-89-days-delinquent/#mp-line-chart-container"> <li>https://www.consumerfinance.gov/data-research/mortgage-performance-trends/mortgages-30-89-days-delinquent/#mp-line-chart-container</li></a>
+				<br>
+				<ul class="actions">
+					<li><a href="../requirements/Loan Approval Analysis.pdf"  download="bottle.json"  class="button">Learn
+							More</a>
+					</li>
+
+					
+				</ul>
+
+		</section>
+<hr>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/analya-ramirez-004035163/"
+							class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/aramirez209" class="icon brands fa-github"><span
+								class="label">Github</span></a></li>
+					<li><a href="mailto:Analya_ramirez209@yahoo.com" class="icon solid fa-envelope"><span
+								class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

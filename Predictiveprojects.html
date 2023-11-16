@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title> Analya Ramirez portfolio website </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D125QPSGD5"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-D125QPSGD5');
+</script>
+
+
+
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="images/fulls/profile.jpeg" class="image avatar"><img src="images/fulls/profile.jpeg" alt="" /></a>
+			<h1><strong>Analya Ramirez</strong></h1>
+			<P> I am passionate about delivering decision-making support grounded in data, utilizing statistical
+				modeling, machine learning, and data mining algorithms to drive informed choices.</P>
+			<!-- <h1 style="font-size: 2px;"></h1><a href="https://www.linkedin.com/in/isaac-dada-24ba6ab3/">@IsaacDada</a> -->
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h1 style="font-size: 24px;">Predictive Modeling for Salary Categorization of Employees  </h1>
+			</header>
+			<article class="col-6 col-12-xsmall work-item">
+				<h2><strong>Introduction</strong></h2>
+				<h4>Organizations face the ongoing problem of successfully managing and compensating their 
+					employees in today's dynamic and continually evolving workforce. Employee remuneration 
+					affects not only a person's financial stability, but also their job satisfaction, motivation, and overall 
+					performance. However, effectively categorizing employee pay as high, medium, or low is a 
+					difficult undertaking that necessitates a thorough grasp of the different elements that influence 
+					compensation decisions. As a result, organizations frequently struggle to maintain a fair and 
+					transparent remuneration system that is aligned with employee contributions. 
+					The significance of resolving this issue cannot be emphasized. Employee engagement, retention, 
+					and productivity are all dependent on a fair and balanced compensation scheme. When 
+					employees believe their compensation are consistent with their talents, expertise, and efforts, it 
+					generates a sense of justice and motivates them to achieve to their full potential. An unfair or 
+					misaligned remuneration structure, on the other hand, can lead to demotivation, decreased job 
+					satisfaction, and increased turnover rates, hurting organizational performance. 
+					To solve this essential issue, this research proposes developing predictive models capable of 
+					accurately categorizing employee pay based on a wide range of independent parameters. We hope 
+					to capture the multifaceted nature of salary categorization by utilizing a variety of variables such 
+					as the individual's level of happiness, average monthly working hours, tenure within the 
+					organization, current employment status, past promotions within the last five years, and 
+					department affiliation (particularly the sales department). 
+					This study will use four distinct types of predictive models—logistic regression, random forests, decision 
+					trees, and naive Bayes—to see which strategy is most effective for properly forecasting employee 
+					compensation categories. We will choose the best-performing model based on scoring measures like as 
+					accuracy, precision, F1 score, and recall score. 
+					The data set chosen for this project is the "HR_comma_sep", 
+					<a ><li  style="list-style: none;" href="(https://www.kaggle.com/datasets/liujiaqi/hr-comma-sepcsv) from Kaggle. This data set contains 14998 ">(https://www.kaggle.com/datasets/liujiaqi/hr-comma-sepcsv) from Kaggle. This data set contains 14998 </li></a>
+					records of employees and 10 variables/features. .</h4>
+				<br>
+				<h2><strong>Analysis and Insights EDA </strong></h2>
+				<h4>To analyze the dataset, EDA employs a number of approaches and tools, such as summary statistics, 
+					data visualization, and data cleaning. </h4>
+				<br>
+				<h2><strong>a) Descriptive statistics </strong></h2>
+				<img src="./images/fulls/predictiveReport.PNG" alt="">
+<br>
+<h4>The table above provides the summary of descriptive statistics which includes the mean, standard deviation, 
+	minimum and maximum of all the variables. </h4>
+
+				<h2><strong>b)
+					Distribution of Department
+					</strong></h2>
+					<img src="./images/fulls/analysis.PNG" alt="">
+				<br>
+				<h4>The distribution shows that the sales department has the highest distribution of employees while 
+					management department has the least number of employees. </h4>
+				<br>
+				<h2><strong>c)
+					Distribution of sales Category </strong></h2>
+					<img src="./images/fulls/analysis2.PNG" alt="">
+				<br>
+			
+				<h4> The distribution shows that the number of employees who receive low salary is higher followed by 
+					medium category while high salaried employees are the least. 
+				</h4>
+				<br>
+				<h2><strong> d)
+					Distribution of satisfaction level </strong></h2>
+					<img src="./images/fulls/analysis3.PNG" alt="">
+				<br>
+				<h4> The distribution of satisfaction level is not normally distributed i.e. its not symmetric.  </h4>
+				<br>
+
+				<h2><strong> Data Preparation  </strong></h2>
+				<h4> The data preparation phase is a crucial step in research, ensuring that the dataset is cleaned, transformed, 
+					and organized for further analysis and modeling. The data preparation techniques 
+					performed on this data include Feature Scaling, One-Hot Encoding, Binning, Log Transformation 
+					and Feature Interaction.
+				</h4>
+				<br>
+
+				<h2><strong> e)
+					Model Building </strong></h2>
+				<h4> The model development phase is an important element in this research since it involves 
+					developing prediction models to appropriately categorize employee compensation as high, 
+					medium, or low based on a range of independent characteristics. During this step, relevant 
+					modelling approaches are chosen, models are trained on the prepared dataset, their performance 
+					is evaluated, and the best-performing model is chosen for further research. For this research, 4 
+					types of models are used to predict salary i.e. logistics regression, random forests, decision trees 
+					and naive Bayes and use scoring metrics that includes accuracy, precision, F1 score and recall 
+					score to determine the best model for predicting employee’s salary. 
+				</h4>
+				<img src="./images/fulls/analysis4.PNG" alt="">
+				<br>
+				<h4> From the model development and evaluation, the following conclusions can be drawn: 
+					<br>
+					1. Logistic Regression: The accuracy of the logistic regression model was approximately 
+					<br>
+					49.6%. Additionally, the precision, recall, and F1 score were relatively low. 
+					<br>
+					2. Random Forest: The random forest model outperformed logistic regression by 
+					approximately 62.5% in terms of accuracy. As indicated by the confusion matrix, its 
+					performance improved across all salary brackets. In comparison to logistic regression, the 
+					precision, recall, and F1 score were notably higher. 
+					<br>
+					3. Decision Trees: The accuracy of the decision tree model was approximately 59.6%. The 
+					performance was comparable to that of random forest, albeit with slightly inferior 
+					<br>
+					precision, recall, and F1 score values. However, it was still superior to logistic regression. 
+					4. The accuracy of the naive Bayes model was approximately 49.2 percent. Additionally, the 
+					precision, recall, and F1 score were relatively low. 
+					<br>
+					Overall, among the evaluated models, the random forest model demonstrated the highest levels 
+					of accuracy, precision, recall, and F1 score. Compared to other models, it demonstrated a 
+					superior ability to predict differences in salary categories.
+				</h4>
+				<br>
+				<h2><strong> Conclusion </strong></h2>
+				<h4> Based on the results of the model development and evaluation, several conclusions can be drawn. 
+					The random forest model emerged as the most promising among the evaluated models. It 
+					showcased the highest levels of accuracy, precision, recall, and F1 score, indicating its superior 
+					ability to predict salary categories. Therefore, it could be considered for deployment in practical 
+					applications. 
+					<br>
+					However, before deploying the model, several considerations and challenges need to be explored. 
+					First, it is important to assess the generalizability of the model on unseen data to ensure its 
+					robustness. Additionally, further analysis should be conducted to understand the factors that 
+					contribute most to the model's predictions, as this can provide valuable insights and enhance 
+					interpretability. 
+					<br>
+					Moreover, the performance of the model should be evaluated on diverse datasets to account for 
+					potential biases and ensure fair predictions across different demographic groups. It is crucial to 
+					address any biases present in the data or the model itself to avoid perpetuating discriminatory 
+					outcomes. Furthermore, ongoing monitoring and re-evaluation of the deployed model's 
+					performance is essential to detect any degradation in accuracy or biases that may arise due to 
+					evolving data patterns or changes in the target population. 
+					<br>
+					In conclusion, while the random forest model demonstrates promising performance, additional 
+					exploration and validation are necessary before deploying it in real-world applications. 
+					Addressing potential challenges such as generalizability, interpretability, bias mitigation, and 
+					ongoing monitoring will contribute to the model's readiness and reliability.
+				</h4>
+				<br>
+				<ul class="actions">
+					<li><a href="../requirements/Predictive Modeling for Salary Categorization of Employees.pdf"  download="bottle.json"  class="button">Learn
+							More</a>
+					</li>
+
+					
+				</ul>
+
+		</section>
+<hr>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/analya-ramirez-004035163/"
+							class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/aramirez209" class="icon brands fa-github"><span
+								class="label">Github</span></a></li>
+					<li><a href="mailto:Analya_ramirez209@yahoo.com" class="icon solid fa-envelope"><span
+								class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
