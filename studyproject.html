@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>e72057fd42a64d1bbb63067c93d6115c</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="04d86083-5518-475e-9dfb-2272bfeae4f1" class="cell markdown">
+<h2 id="student-grade-analysis">Student Grade Analysis</h2>
+</div>
+<div id="dab85175-09ac-4e81-a1e5-1ac7c835e44f" class="cell markdown">
+<h3 id="context">Context</h3>
+</div>
+<div id="05d91023-f4bd-477d-a3f2-b42da1ba05b3" class="cell markdown">
+<p>Welcome to my analysis of the Student Grade Prediction dataset! This
+dataset contains a wealth of information on Portuguese high school
+students, including their demographics, family background, study habits,
+and academic performance. In this notebook, I will be exploring the
+dataset using various statistical and machine learning techniques, with
+the goal of predicting the final grades of these students. Specifically,
+I will be analyzing five variables from the dataset, creating histograms
+and probability mass functions to identify any outliers and compare
+different scenarios, calculating descriptive characteristics such as
+mean and spread, and conducting regression analysis to explore the
+relationships between variables. Through this analysis, I hope to gain a
+deeper understanding of the factors that impact student performance in
+high school and develop accurate models for predicting final grades.</p>
+</div>
+<div id="3d8b7440-b166-413c-99a4-6a4687e40cfb" class="cell markdown">
+<h3 id="summary">Summary</h3>
+</div>
+<div id="552e2def-989d-4edc-a5af-250a5ae9fbde" class="cell markdown">
+<ol>
+<li>Load the dataset into Python using a library such as Pandas.</li>
+<li>Choose 5 variables from the dataset that you want to analyze and
+describe what they mean.</li>
+<li>Create a histogram for each of the 5 variables and identify any
+outliers. To handle outliers, you can either remove them or use a
+statistical method to replace them with a more reasonable value.</li>
+<li>Calculate the descriptive characteristics of the variables, such as
+mean, mode, spread, and tails, using Python's built-in functions or
+external libraries.</li>
+<li>Create a Probability Mass Function (PMF) to compare two scenarios in
+your data, such as comparing the final grades of students who received
+extra tutoring versus those who did not.</li>
+<li>Create a Cumulative Distribution Function (CDF) for one of your
+variables to understand its distribution and how it relates to the
+question you are trying to answer.</li>
+<li>Choose an analytical distribution such as normal, exponential, or
+Poisson, and plot it against your data to see how well it fits.</li>
+<li>Create two scatter plots to compare two variables and analyze the
+correlation and causation using covariance, Pearson's correlation, and
+non-linear relationships. Conduct a test on your hypothesis using a
+method such as t-test, chi-square, or ANOVA.</li>
+<li>Perform a regression analysis on either one dependent and one
+explanatory variable or multiple explanatory variables using Python's
+built-in functions or external libraries.</li>
+</ol>
+<p>Here are some popular libraries you can use for these tasks:</p>
+<ol>
+<li>Pandas for loading and manipulating the dataset.</li>
+<li>Matplotlib or Seaborn for creating histograms and scatter
+plots.</li>
+<li>NumPy for calculating the descriptive characteristics of
+variables.</li>
+<li>SciPy for conducting statistical tests.</li>
+<li>Scikit-learn for performing regression analysis.</li>
+</ol>
+</div>
+<div id="3cc26570-d390-4e82-b75b-42dec3bc3ccd" class="cell markdown">
+<h4 id="libraries">Libraries</h4>
+</div>
+<div id="870dd767-08dd-444c-adb3-fea62ff9ff24" class="cell code"
+data-execution_count="61">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy <span class="im">as</span> sp</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> pearsonr</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span></code></pre></div>
+</div>
+<div id="755dfb58-4817-49ea-93ee-211e353d15b7" class="cell markdown">
+<h4 id="1-load-the-dataset">1. Load the dataset</h4>
+</div>
+<div id="70a7bc49-5559-4a4f-a670-f962348ecc8b" class="cell code"
+data-execution_count="62">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the dataset into a Pandas DataFrame</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;student-mat.csv&#39;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the first few rows of the DataFrame</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="62">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>school</th>
+      <th>sex</th>
+      <th>age</th>
+      <th>address</th>
+      <th>famsize</th>
+      <th>Pstatus</th>
+      <th>Medu</th>
+      <th>Fedu</th>
+      <th>Mjob</th>
+      <th>Fjob</th>
+      <th>...</th>
+      <th>famrel</th>
+      <th>freetime</th>
+      <th>goout</th>
+      <th>Dalc</th>
+      <th>Walc</th>
+      <th>health</th>
+      <th>absences</th>
+      <th>G1</th>
+      <th>G2</th>
+      <th>G3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>18</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>A</td>
+      <td>4</td>
+      <td>4</td>
+      <td>at_home</td>
+      <td>teacher</td>
+      <td>...</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>6</td>
+      <td>5</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>17</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>T</td>
+      <td>1</td>
+      <td>1</td>
+      <td>at_home</td>
+      <td>other</td>
+      <td>...</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>15</td>
+      <td>U</td>
+      <td>LE3</td>
+      <td>T</td>
+      <td>1</td>
+      <td>1</td>
+      <td>at_home</td>
+      <td>other</td>
+      <td>...</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>10</td>
+      <td>7</td>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>15</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>T</td>
+      <td>4</td>
+      <td>2</td>
+      <td>health</td>
+      <td>services</td>
+      <td>...</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>5</td>
+      <td>2</td>
+      <td>15</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>16</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>T</td>
+      <td>3</td>
+      <td>3</td>
+      <td>other</td>
+      <td>other</td>
+      <td>...</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>6</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 33 columns</p>
+</div>
+</div>
+</div>
+<div id="da498f45-303f-4ee9-995f-90d40ca85469" class="cell code"
+data-execution_count="63">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="63">
+<pre><code>(395, 33)</code></pre>
+</div>
+</div>
+<div id="faa77a18-4807-4fe1-adbc-b4b32f24016c" class="cell markdown">
+<h4 id="2-choose-5-variables-from-the-dataset">2. Choose 5 variables
+from the dataset</h4>
+</div>
+<div id="9d41080d-385c-453a-9525-1fa20ef6213e" class="cell markdown">
+<p><strong>Next, let's choose five variables from the dataset to
+analyze. For example, we could choose the following
+variables:</strong></p>
+<pre><code>1. &#39;age&#39; represents the age of the student in years.
+2. &#39;sex&#39; represents the sex of the student, either &#39;F&#39; for female or &#39;M&#39; for male.
+3. &#39;famsize&#39; represents the size of the student&#39;s family, either &#39;LE3&#39; for less than or equal to 3 or &#39;GT3&#39; for greater than 3.
+4. &#39;studytime&#39; represents the amount of time the student spends studying each week, measured in hours.
+5. &#39;G1&#39; represents the student&#39;s grade in the first period, on a scale from 0 to 20.</code></pre>
+<p><strong>These variables could be used to answer questions such
+as:</strong></p>
+<pre><code>- How does age and sex affect a student&#39;s final grade?
+- Does the size of a student&#39;s family impact their study habits and academic performance?
+- Is there a correlation between the amount of time a student spends studying and their first period grade?</code></pre>
+</div>
+<div id="5eac9b05-303f-4363-a41a-6ac6f485b3e7" class="cell code"
+data-execution_count="64">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># select this 5 columns from the dataset</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">&#39;age&#39;</span>, <span class="st">&#39;sex&#39;</span>, <span class="st">&#39;famsize&#39;</span>, <span class="st">&#39;studytime&#39;</span>, <span class="st">&#39;G1&#39;</span>]]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="64">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>sex</th>
+      <th>famsize</th>
+      <th>studytime</th>
+      <th>G1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>18</td>
+      <td>F</td>
+      <td>GT3</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>17</td>
+      <td>F</td>
+      <td>GT3</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15</td>
+      <td>F</td>
+      <td>LE3</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15</td>
+      <td>F</td>
+      <td>GT3</td>
+      <td>3</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>16</td>
+      <td>F</td>
+      <td>GT3</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="81d48179-5372-47cb-a306-3eee921e18a6" class="cell markdown">
+<h4
+id="3create-a-histogram-for-each-of-the-5-variables-and-identify-any-outliers">3.Create
+a histogram for each of the 5 variables and identify any outliers</h4>
+</div>
+<div id="cd5fdba3-7883-4b26-8a85-727bf401bdc9" class="cell code"
+data-execution_count="65">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a histogram for the age variable</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;age&#39;</span>].hist()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Age&#39;</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Age (years)&#39;</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/4cb191cf6f5ce183cd4e3fec61a7d6f1691588fe.png" /></p>
+</div>
+</div>
+<div id="52ca6679-8339-4143-8944-acfa9a893c54" class="cell code"
+data-execution_count="66">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a histogram for the sex variable</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;sex&#39;</span>].value_counts().plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Sex&#39;</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Sex&#39;</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/efb9e5f4be6987a7c0de61b4c5c49fbdfe07390d.png" /></p>
+</div>
+</div>
+<div id="b31f360a-e4e2-4aa2-90e4-aa8faea538c4" class="cell code"
+data-execution_count="67">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a histogram for the famsize variable</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;famsize&#39;</span>].value_counts().plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Family Size&#39;</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Family Size&#39;</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/3ee02b7d6583489987e712793e9086a3c11059ee.png" /></p>
+</div>
+</div>
+<div id="26e77780-7f0d-4264-be3b-32af8b372c93" class="cell code"
+data-execution_count="68">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a histogram for the studytime variable</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;studytime&#39;</span>].hist()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Study Time&#39;</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Weekly Study Time (hours)&#39;</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/2ce2d049ca56d3ef04b44a9769dc6a9bf8dc01f8.png" /></p>
+</div>
+</div>
+<div id="a1048185-1122-46f5-937f-95fc59b410d7" class="cell code"
+data-execution_count="69">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a histogram for the G1 variable</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;G1&#39;</span>].hist()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;First Period Grade&#39;</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Grade (0-20)&#39;</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/2833523a4b69283829bdca199854b5df9c0975aa.png" /></p>
+</div>
+</div>
+<div id="71f0826f-03ab-419b-8292-2577fda60761" class="cell markdown">
+<p>To identify outliers, we can visually inspect the histograms for any
+values that are significantly different from the rest of the
+distribution. For example, in the histogram of the <strong>age</strong>
+variable, we may notice a few students who are significantly older than
+the others. Similarly, in the histogram of the <strong>G1</strong>
+variable, we may notice a few students who received extremely low or
+high grades in the first period.</p>
+<p>To handle outliers, we could either remove them from the dataset or
+use a statistical method to replace them with a more reasonable value.
+For example, if a student's age is incorrectly recorded as 100 years
+old, we could remove that record from the dataset.</p>
+<p>So in the next step we will remove the outliers of the column
+<strong>age</strong>.</p>
+</div>
+<div id="acc239bf-1943-468d-b09b-df6fbb270e5b" class="cell code"
+data-execution_count="70">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove outliers from the age variable</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">&#39;age&#39;</span>] <span class="op">&lt;=</span> <span class="dv">20</span>]</span></code></pre></div>
+</div>
+<div id="e610c472-63c1-4834-af49-a8335bd95ee4" class="cell markdown">
+<h4
+id="4-calculate-the-descriptive-characteristics-of-the-variables-such-as-mean-mode-spread-and-tails">4.
+Calculate the descriptive characteristics of the variables, such as
+mean, mode, spread, and tails.</h4>
+</div>
+<div id="aa2ad223-9df0-457c-bc09-dafc506dc817" class="cell code"
+data-execution_count="71">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the descriptive characteristics of &quot;age&quot;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>age_mean <span class="op">=</span> np.mean(df[<span class="st">&quot;age&quot;</span>])</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>age_mode <span class="op">=</span> df[<span class="st">&quot;age&quot;</span>].mode()[<span class="dv">0</span>]</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>age_std <span class="op">=</span> np.std(df[<span class="st">&quot;age&quot;</span>])</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Age Descriptive Characteristics:&quot;</span>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Mean:&quot;</span>, age_mean)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Mode:&quot;</span>, age_mode)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Standard Deviation:&quot;</span>, age_std)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Age Descriptive Characteristics:
+Mean: 16.671755725190838
+Mode: 16
+Standard Deviation: 1.230089767457689
+</code></pre>
+</div>
+</div>
+<div id="c00d780d-2b57-4b9f-9b3a-43c018f5bdde" class="cell code"
+data-execution_count="72">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the descriptive characteristics of &quot;G3&quot;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>g1_mean <span class="op">=</span> np.mean(df[<span class="st">&quot;G1&quot;</span>])</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>g1_mode <span class="op">=</span> df[<span class="st">&quot;G1&quot;</span>].mode()[<span class="dv">0</span>]</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>g1_std <span class="op">=</span> np.std(df[<span class="st">&quot;G1&quot;</span>])</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;G3 Descriptive Characteristics:&quot;</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Mean:&quot;</span>, g1_mean)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Mode:&quot;</span>, g1_mode)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Standard Deviation:&quot;</span>, g1_std)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>G3 Descriptive Characteristics:
+Mean: 10.923664122137405
+Mode: 10
+Standard Deviation: 3.3138271209344223
+</code></pre>
+</div>
+</div>
+<div id="a518e8ac-793a-4e57-987b-e214c332b69c" class="cell markdown">
+<h4
+id="5-create-a-probability-mass-function-pmf-to-compare-two-scenarios-in-your-data">5.
+Create a Probability Mass Function (PMF) to compare two scenarios in
+your data.</h4>
+</div>
+<div id="be50fe68-d95d-4f9c-9f0a-bdfe4745be69" class="cell code"
+data-execution_count="73">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the columns of interest</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> df[[<span class="st">&#39;sex&#39;</span>, <span class="st">&#39;G1&#39;</span>]]</span></code></pre></div>
+</div>
+<div id="1457c33f-2038-4bf8-8ef1-8e4abdf103c4" class="cell code"
+data-execution_count="74">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a PMF for female students</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>female_pmf <span class="op">=</span> data[data[<span class="st">&#39;sex&#39;</span>] <span class="op">==</span> <span class="st">&#39;F&#39;</span>][<span class="st">&#39;G1&#39;</span>].value_counts(normalize<span class="op">=</span><span class="va">True</span>).sort_index()</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a PMF for male students</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>male_pmf <span class="op">=</span> data[data[<span class="st">&#39;sex&#39;</span>] <span class="op">==</span> <span class="st">&#39;M&#39;</span>][<span class="st">&#39;G1&#39;</span>].value_counts(normalize<span class="op">=</span><span class="va">True</span>).sort_index()</span></code></pre></div>
+</div>
+<div id="ca961163-9c67-44be-99e6-862b28dc9d49" class="cell code"
+data-execution_count="75">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the PMFs</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>plt.plot(female_pmf.index, female_pmf.values, label<span class="op">=</span><span class="st">&#39;Female&#39;</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>plt.plot(male_pmf.index, male_pmf.values, label<span class="op">=</span><span class="st">&#39;Male&#39;</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Final Grade&#39;</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;PMF&#39;</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Probability of Final Grade by Gender&#39;</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/442ac3502447548a507fc2635f01febf82487269.png" /></p>
+</div>
+</div>
+<div id="2b3966fd-2ec9-4f48-a569-8d45bc12add6" class="cell markdown">
+<h4
+id="6-create-a-cumulative-distribution-function-cdf-for-one-of-your-variables">6.
+Create a Cumulative Distribution Function (CDF) for one of your
+variables.</h4>
+</div>
+<div id="90e5f051-a748-46cc-a292-9d789d63e817" class="cell markdown">
+<p>Let's create a CDF for the 'G1' column, which represents the
+first-period grade of the students.</p>
+<p>To create a CDF, we need to first create a sorted list of the values
+in the 'G1' column and calculate the cumulative probability for each
+value. We can use the ECDF (Empirical Cumulative Distribution Function)
+function from the statsmodels library to calculate the cumulative
+probabilities.</p>
+</div>
+<div id="cad58b0d-2cf3-4b25-93fc-1baaf83dc4a9" class="cell code"
+data-execution_count="76">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the cumulative probabilities using the ECDF function</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>ecdf <span class="op">=</span> sm.distributions.ECDF(df[<span class="st">&#39;G1&#39;</span>])</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.sort(df[<span class="st">&#39;G1&#39;</span>])</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> ecdf(x)</span></code></pre></div>
+</div>
+<div id="cb75afd5-1f8b-4a63-aed7-67dd7f4ba360" class="cell code"
+data-execution_count="77">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the CDF</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;G1&#39;</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Cumulative Probability&#39;</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;CDF of First-Period Grades&#39;</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/6ab43163f85869153755f8c73fbb58edea12c562.png" /></p>
+</div>
+</div>
+<div id="f2606424-56a0-49d9-b434-5e738cb2d26a" class="cell markdown">
+<p>The resulting plot shows the cumulative distribution of first-period
+grades for the students. We can use this plot to answer questions such
+as "what is the probability of a student getting a grade of 12 or lower
+in the first period?" or "what is the probability of a student getting a
+grade of 16 or higher in the first period?".</p>
+</div>
+<div id="23b8b24d-af33-47e6-b265-2a31db149d02" class="cell markdown">
+<h4
+id="7-choose-an-analytical-distribution-such-as-normal-exponential-or-poisson-and-plot-it-against-your-data-to-see-how-well-it-fits">7.
+Choose an analytical distribution such as normal, exponential, or
+Poisson, and plot it against your data to see how well it fits.</h4>
+</div>
+<div id="f6d006ce-617f-409e-9c99-4818d39989e9" class="cell markdown">
+<p>To perform this step, we will choose the variable 'G1' from our
+dataset and compare it against a normal distribution. We will use the
+seaborn library in Python to plot the histogram and the fitted normal
+distribution curve.</p>
+</div>
+<div id="7f1c9396-a031-486b-ad0d-ddaa85258d2d" class="cell code"
+data-execution_count="78">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the &#39;G1&#39; column</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>grades <span class="op">=</span> df[<span class="st">&#39;G1&#39;</span>]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the mean and standard deviation of the grades</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>mean <span class="op">=</span> grades.mean()</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>std <span class="op">=</span> grades.std()</span></code></pre></div>
+</div>
+<div id="1826838d-b651-4ac2-a06f-ffb03fb842db" class="cell code"
+data-execution_count="79">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the histogram</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>sns.histplot(grades, kde<span class="op">=</span><span class="va">True</span>, stat<span class="op">=</span><span class="st">&#39;density&#39;</span>, bins<span class="op">=</span><span class="dv">20</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a range of values for the x-axis</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">20</span>, <span class="dv">100</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the values of the normal distribution for the range of x-values</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> norm.pdf(x, mean, std)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the normal distribution against the histogram of the grades</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, linewidth<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a legend and axis labels</span></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>plt.legend([<span class="st">&#39;Grades&#39;</span>, <span class="st">&#39;Normal Distribution&#39;</span>])</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Grade&#39;</span>)</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Density&#39;</span>)</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the plot</span></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/380e278a958fa65a81293585862cdee4799067ac.png" /></p>
+</div>
+</div>
+<div id="883e98b8-41c6-40ef-8b1d-1e3e64b66d6f" class="cell markdown">
+<p>This code will create a histogram of the G1 grades and overlay a
+normal distribution with the same mean and standard deviation as the
+data. The resulting plot can be used to assess the fit of the normal
+distribution to the data. If the distribution appears to closely match
+the shape of the histogram, then the normal distribution may be a good
+fit for the data. However, it is important to remember that the choice
+of distribution should be based on the characteristics of the data and
+the context of the analysis.</p>
+</div>
+<div id="9fa25bc9-86a5-4c7f-a054-666d35eb1f4a" class="cell markdown">
+<h4
+id="8-create-two-scatter-plots-to-compare-two-variables-and-analyze-the-correlation-and-causation">8.
+Create two scatter plots to compare two variables and analyze the
+correlation and causation.</h4>
+</div>
+<div id="bac3cf30-c87d-4b48-8fe7-a542bab5f3d0" class="cell markdown">
+<p>We can create two scatter plots to compare two variables from our
+dataset. Let's choose G1 (the first period grade) as the dependent
+variable and studytime (weekly study time) as the explanatory variable.
+We will analyze the correlation between these two variables using
+covariance and Pearson's correlation coefficient. We can also explore if
+there is any non-linear relationship between them by plotting a curve of
+best fit.</p>
+</div>
+<div id="a897fbac-80c5-49a0-8e67-4ff05a3eb1e9" class="cell code"
+data-execution_count="83">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose the variables we want to analyze</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>dependent_variable <span class="op">=</span> <span class="st">&#39;G1&#39;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>explanatory_variable <span class="op">=</span> <span class="st">&#39;studytime&#39;</span></span></code></pre></div>
+</div>
+<div id="6fcc995f-0547-4d58-a16a-738212320dd8" class="cell code"
+data-execution_count="84">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a scatter plot</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(df[explanatory_variable], df[dependent_variable], alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(explanatory_variable)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(dependent_variable)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/14de3233943a7ae05fd65152732f38a788621b21.png" /></p>
+</div>
+</div>
+<div id="4f6edc8f-5641-45ae-a871-3cd08e946904" class="cell code"
+data-execution_count="86">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate covariance</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>covariance <span class="op">=</span> np.cov(df[explanatory_variable], df[dependent_variable])[<span class="dv">0</span>, <span class="dv">1</span>]</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Covariance:&#39;</span>, covariance)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Covariance: 0.4342381990964326
+</code></pre>
+</div>
+</div>
+<div id="ae77db62-9800-4f87-84bd-72f66a40aed0" class="cell code"
+data-execution_count="88">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate Pearson&#39;s correlation coefficient and p-value</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>pearson_corr, p_value <span class="op">=</span> pearsonr(df[explanatory_variable], df[dependent_variable])</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Pearson correlation coefficient:&#39;</span>, pearson_corr)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;p-value:&#39;</span>, p_value)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Pearson correlation coefficient: 0.15615163358710832
+p-value: 0.0019041299493151517
+</code></pre>
+</div>
+</div>
+<div id="165898b3-8ad6-4519-b812-1d389d303ff9" class="cell code"
+data-execution_count="91">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot a curve of best fit</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(df[explanatory_variable], df[dependent_variable], alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(explanatory_variable)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(dependent_variable)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>plt.plot(np.unique(df[explanatory_variable]), np.poly1d(np.polyfit(df[explanatory_variable], df[dependent_variable], <span class="dv">1</span>))(np.unique(df[explanatory_variable])), color<span class="op">=</span><span class="st">&#39;red&#39;</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_ee636d05e4844d629648f36acb1ed206/905167ae3a32bfb824b18a7cdcde5773f748b4e9.png" /></p>
+</div>
+</div>
+<div id="e6b19c0c-2e91-4df3-a767-eb0a3a6b7558" class="cell markdown">
+<p>To conduct a hypothesis test on these variables, we can use a t-test
+to see if there is a significant difference in G1 between students who
+study for different amounts of time.</p>
+</div>
+<div id="c5815e39-6836-42c6-809e-be56dcdd3476" class="cell code"
+data-execution_count="92">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> ttest_ind</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Divide the data into two groups based on the explanatory variable</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>group1 <span class="op">=</span> df[df[explanatory_variable] <span class="op">==</span> <span class="dv">1</span>][dependent_variable]</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>group2 <span class="op">=</span> df[df[explanatory_variable] <span class="op">==</span> <span class="dv">4</span>][dependent_variable]</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Conduct a t-test</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>t_statistic, p_value <span class="op">=</span> ttest_ind(group1, group2, equal_var<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;t-statistic:&#39;</span>, t_statistic)</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;p-value:&#39;</span>, p_value)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>t-statistic: -1.82508606981917
+p-value: 0.07532296851154617
+</code></pre>
+</div>
+</div>
+<div id="b4284a7b-4917-40cf-9687-6e7546acccab" class="cell markdown">
+<p>The t-test result shows that the t-statistic is -1.82508606981917 and
+the p-value is 0.07532296851154617. The t-statistic indicates the
+difference between the means of the two groups, where a negative value
+suggests that the mean of group 1 is less than the mean of group 2. The
+p-value represents the probability of observing a t-statistic as extreme
+as the one calculated, assuming that the null hypothesis is true.</p>
+<p>In this case, since the p-value is greater than the significance
+level of 0.05, we fail to reject the null hypothesis that there is no
+significant difference between the means of the two groups. Therefore,
+we can conclude that there is no significant difference in the final
+grades of students who worked more hours versus those who did not.</p>
+</div>
+<div id="e887ec82-42b0-4a56-9fe4-6f3fbcb82972" class="cell markdown">
+<h4 id="9-perform-a-regression-analysis">9. Perform a regression
+analysis.</h4>
+</div>
+<div id="9fcc5379-fa03-440e-be85-04e7f0eb679c" class="cell code"
+data-execution_count="94">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># define the dependent variable (G1) and the explanatory variable (studytime)</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">&#39;G1&#39;</span>]</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df[[<span class="st">&#39;studytime&#39;</span>]]</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="co"># add a constant to the explanatory variable</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> sm.add_constant(X)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co"># fit the linear regression model</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> sm.OLS(y, X).fit()</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co"># print the model summary</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model.summary())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                     G1   R-squared:                       0.024
+Model:                            OLS   Adj. R-squared:                  0.022
+Method:                 Least Squares   F-statistic:                     9.772
+Date:                Thu, 23 Feb 2023   Prob (F-statistic):            0.00190
+Time:                        11:36:10   Log-Likelihood:                -1023.6
+No. Observations:                 393   AIC:                             2051.
+Df Residuals:                     391   BIC:                             2059.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P&gt;|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          9.6621      0.436     22.151      0.000       8.805      10.520
+studytime      0.6182      0.198      3.126      0.002       0.229       1.007
+==============================================================================
+Omnibus:                       20.068   Durbin-Watson:                   2.045
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               11.793
+Skew:                           0.267   Prob(JB):                      0.00275
+Kurtosis:                       2.340   Cond. No.                         6.86
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</code></pre>
+</div>
+</div>
+<div id="18873125-1bba-4a44-838d-e21a09fb3c31" class="cell markdown">
+<p>In this example, we can see that the coefficient for the studytime
+variable is 0.61, which means that for every one unit increase in
+studytime, we would expect a 0.61 unit increase in G1. The p-value for
+studytime is less than 0.05, which suggests that it is statistically
+significant and has a significant effect on G1. The low R-squared value
+indicates that only a small proportion of the variance in G1 can be
+explained by studytime.</p>
+<br>
+<br>
+<ul class="actions">
+  <li style="list-style: none;"><a href="../requirements/Students_analysis.Ipynb"  download="bottle.json"  class="button">Learn
+      More</a>
+  </li>
+<br>
+  <li style="list-style: none;"><a href="https://github.com/aramirez209/" class="button">See Github Repository</a></li>
+  
+</ul>
+</div>
+</body>
+</html>
